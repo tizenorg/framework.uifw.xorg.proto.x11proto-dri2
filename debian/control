@@ -1,0 +1,25 @@
+Source: x11proto-dri2
+Section: x11
+Priority: optional
+Maintainer: SooChan Lim <sc1.lim@samsung.com>, Sangjin Lee <lsj119@samsung.com>, Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>, Debian X Strike Force <debian-x@lists.debian.org>
+Uploaders: SooChan Lim <sc1.lim@samsugn.com>, Julien Cristau <jcristau@debian.org>
+Build-Depends: debhelper, autoconf, automake, xutils-dev
+Standards-Version: 3.8.4
+Vcs-Git: git://git.debian.org/git/pkg-xorg/proto/x11proto-dri2
+Vcs-Browser: http://git.debian.org/?p=pkg-xorg/proto/x11proto-dri2.git
+
+Package: x11proto-dri2-dev
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Pre-Depends: x11-common (>= 1:7.0.0)
+Description: X11 DRI2 extension wire protocol
+ This package provides development headers describing the wire protocol
+ for the DRI2 extension, used to organise direct rendering support
+ for 3D clients, and replace the XFree86-DRI extension.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+ .
+ This package is built from the X.org dri2proto proto module.
