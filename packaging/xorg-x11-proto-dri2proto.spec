@@ -43,5 +43,4 @@ rm -rf %{buildroot}
 %{_includedir}/X11/extensions/dri2proto.h
 %{_includedir}/X11/extensions/dri2tokens.h
 %{_datadir}/pkgconfig/dri2proto.pc
-
-
+%exclude %{_datadir}/doc/dri2proto/dri2proto.txt
