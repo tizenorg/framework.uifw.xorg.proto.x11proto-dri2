@@ -5,7 +5,7 @@ Release:    1.8
 Group:      Development/System
 License:    MIT
 URL:        http://www.x.org
-Source0:    http://xorg.freedesktop.org/releases/individual/proto/dri2proto-%{version}.tar.gz
+Source0:    %{name}-%{version}.tar.gz
 Source1001: packaging/xorg-x11-proto-dri2proto.manifest 
 Provides:   dri2proto
 BuildRequires: pkgconfig(xorg-macros)
