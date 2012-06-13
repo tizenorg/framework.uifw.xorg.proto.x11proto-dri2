@@ -2,7 +2,7 @@ Name:       xorg-x11-proto-dri2proto
 Summary:    X.Org X11 Protocol dri2proto
 Version:    2.6
 Release:    1.8
-Group:      Development/System
+Group:      Graphics/X Window System
 License:    MIT
 URL:        http://www.x.org
 Source0:    %{name}-%{version}.tar.gz
