@@ -1,6 +1,6 @@
 Name:     xorg-x11-proto-dri2
 Summary:  X.Org X11 Protocol dri2proto
-Version:  2.6
+Version:  2.8
 Release:  1
 Group:    Development/System
 License:  MIT
