@@ -55,7 +55,7 @@
 #define X_DRI2WaitSBC			11
 #define X_DRI2SwapInterval		12
 #define X_DRI2GetParam			13
-
+#define X_DRI2SwapBuffersWithRegion  50  /*Experimental protocol for TIZEN*/
 /*
  * Events
  */
@@ -216,6 +216,21 @@ typedef struct {
     CARD32  remainder_lo B32;
 } xDRI2SwapBuffersReq;
 #define sz_xDRI2SwapBuffersReq  32
+
+/*Experimental protocol for TIZEN*/
+typedef struct {
+    CARD8   reqType;
+    CARD8   dri2ReqType;
+    CARD16  length B16;
+    CARD32  drawable B32;
+    CARD32  region B32;
+    CARD32  pad3 B32;
+    CARD32  pad4 B32;
+    CARD32  pad5 B32;
+    CARD32  pad6 B32;
+    CARD32  pad7 B32;
+} xDRI2SwapBuffersWithRegionReq;
+#define sz_xDRI2SwapBuffersWithRegionReq  32
 
 typedef struct {
     BYTE    type;   /* X_Reply */
